@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "punto-pila-landing",
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "*.png", "use": "@vercel/static" },
+    { "src": "*.mp4", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
